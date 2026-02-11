@@ -164,4 +164,6 @@ For efficiency, there are two clear winners, as shown in my final CPU Time chart
 
 # Conclusion
 
-Overall, any of the four models used would be worthy models for the classification task, but I would pick my Efficient model architecture if I had to choose. If the images requiring classification were more robust (color vice black and white, animals vice digits), I would most likely have to reevaluate my architecture and move more towards a full EfficientNet design to account for the additional complexity. Additionally I would incorporate more preprocessing, such as image adjustment and manipulation, to help prepare the model for additional complexity, but overall for the given problem set I believe I found an accurate and efficient model design.  
+Overall, any of the four models used would be worthy models for the classification task, but I would pick my Efficient model architecture if I had to choose. If the images requiring classification were more robust (color vice black and white, animals vice digits), I would most likely have to reevaluate my architecture and move more towards a full EfficientNet design to account for the additional complexity. Additionally I would incorporate more preprocessing, such as image adjustment and manipulation, to help prepare the model for additional complexity, but overall for the given problem set I believe I found an accurate and efficient model design.
+
+My code can be found at https://github.com/SawyerKaye/CYSE635/blob/main/CNN_Project.ipynb

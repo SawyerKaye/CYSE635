@@ -136,11 +136,11 @@ model.cuda()
 
 The following chart depicts model accuracy across all training sessions, with colors corresponding to the four different models described above. As can be seen, all four models achieved similar levels of accuracy, with the Course LeNet being the slowest to get near the 98% accuracy level (all models converged on roughly 98-98.5% accuracy). One important thing to note is that both the Optimized (green) and Efficient (red) models terminated at approximately the same time due to the implementation of Early Stopping. 
 
-![CNN Accuracy](CNN_Acc.png)
+![CNN Accuracy](https://github.com/SawyerKaye/CYSE635/blob/main/CNN_Acc.png)
 
 The next chart depicts model loss across all training sessions, with similar results to the accuracy chart being evident
 
-![CNN Loss](CNN_Loss.png)
+![CNN Loss](https://github.com/SawyerKaye/CYSE635/blob/main/CNN_Loss.png)
 
 When testing the models on the testing data of 10,000 images, they all performed about the same, as shown in the table below: 
 
@@ -152,7 +152,7 @@ As shown in the table above, my later implementations achieved marginal accuracy
 
 Lastly, the following chart shows the CPU times (in seconds) each model took to train. 
 
-![CNN CPU Time](CNN_CPU_Time.png)
+![CNN CPU Time](https://github.com/SawyerKaye/CYSE635/blob/main/CNN_CPU_Time.png)
 
 The Efficient model performed the best with just over 5 seconds, Optimized performing a little worse at 7 seconds, and then Course LeNet at ~16 seconds and My LeNet at ~21 seconds. 
 

@@ -60,7 +60,7 @@ As can be seen above, the model could fairly clearly make out the original image
 
 Below is shown the images from the five different step levels for the FGSM method
 
-![Step Images](fgsm_step_size_img.png)
+![Step Images](step_img.png)
 
 Based on the above, once the step size increases beyond .15, the image shows clear signs of alteration (though a discerning eye may also notice it at the .15 step size). Given the accuracy at .15 is still only ~12%, if this method were to truly be implemented, I would recommend utilizing that step size as it does the best job of balancing the covertness and effectiveness of the attack.
 
@@ -68,7 +68,7 @@ Based on the above, once the step size increases beyond .15, the image shows cle
 
 Below is shown the images from the five different epsilon values for the PGD method
 
-![Ep Images](pgd_ep_img.png)
+![Ep Images](ep_img.png)
 
 Based on the above, although epsilon values >.15 result in 0% accuracy, they also result in clear signs of tampering, indicating that an epsilon value of .15 is ideal as the attack may go unnoticed and the accuracy drops to <2%
 
@@ -85,7 +85,7 @@ In terms of countermeasures/improvements for the model and previous steps to pro
 
 Overall this lab was incredibly interesting and it was a lot of fun to get hands on experience in implementing these methods. Additionally, by implementing and evaluating them, I feel better prepared to potentially guard against them.
 
-My code can be found here: 
+My code can be found here: https://github.com/SawyerKaye/CYSE635/blob/main/FGSM_PGD_Lab.ipynb
 
 Sources:
 

@@ -20,13 +20,17 @@ I implemented a PGD method based on the example code given in the course with an
 
 When testing the model on the original images, the FGSM images, and the PGD images, I achieved the below results:
 
-IMAGE
+![Model Accuracy](model_image_performance.png)
 
 As shown above, both attacks caused model performance to drop, with PGD outperforming FGSM in reducing accuracy, though both were definitely sufficiently powerful.
 
 When comparing accuracies across tuned parameters, FGSM performance is shown below for the given step size
 
+![FGSM Accuracy](step_size_acc.png)
+
 PGD performance is shown below for the given epsilon value
+
+![PGD Accuracy](pgd_ep_acc.png)
 
 # Analysis
 
@@ -34,13 +38,21 @@ PGD performance is shown below for the given epsilon value
 
 Below you can see the affect that the different models had on the images:
 
+![FGSM Orig Images](fgsm_orig_images.png)
+
 As clearly can be seen, the adversarial images show clear signs of alteration, which would explain why the model performed so poorly on them. I additionally developed feature maps from the model for all of the images, shown below:
 
-Original
+### Original Image Feature Maps
 
-FGSM
+![Original Images](orig_feat_map.png)
 
-PGD
+### FGSM Image Feature Maps
+
+![FGSM Images](fgsm_feat_map.png)
+
+### PGD Image Feature Maps
+
+![PGD Images](pgd_feat_map.png)
 
 As can be seen above, the model could fairly clearly make out the original images, however with FGSM and even more so PGD, the added noise attack caused the image to become obfuscated, shedding further light on why the model had such poor performance.
 
@@ -48,11 +60,15 @@ As can be seen above, the model could fairly clearly make out the original image
 
 Below is shown the images from the five different step levels for the FGSM method
 
+![Step Images](fgsm_step_size_img.png)
+
 Based on the above, once the step size increases beyond .15, the image shows clear signs of alteration (though a discerning eye may also notice it at the .15 step size). Given the accuracy at .15 is still only ~12%, if this method were to truly be implemented, I would recommend utilizing that step size as it does the best job of balancing the covertness and effectiveness of the attack.
 
 ## PGD Parameter Tuning Analysis
 
 Below is shown the images from the five different epsilon values for the PGD method
+
+![Ep Images](pgd_ep_img.png)
 
 Based on the above, although epsilon values >.15 result in 0% accuracy, they also result in clear signs of tampering, indicating that an epsilon value of .15 is ideal as the attack may go unnoticed and the accuracy drops to <2%
 

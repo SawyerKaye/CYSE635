@@ -58,7 +58,7 @@ To combat backdoors like these, I would implement robust data sanitization/prepa
 
 Overall, this was a helpful lab on how not only to implement a backdoor trigger for a model but also then teach how to fight against it.
 
-My code can be found here:
+My code can be found here: https://github.com/SawyerKaye/CYSE635/blob/main/Backdoor_Trigger_Lab.ipynb
 
 # References
 
